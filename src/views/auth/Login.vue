@@ -2,8 +2,8 @@
 <div class="container">
     <div class="row">
       <div class="col-md-6 offset-md-3">
-        <h2 class="text-center text-dark mt-5">SISREC</h2>
-        <div class="text-center mb-5 text-dark">Portal de Receitas</div>
+        <h2 class="text-center text-dark mt-5">Receitas</h2>
+        <div class="text-center mb-5 text-dark">Entrar com e-mail e senha</div>
         <div class="card my-5">
 
           <form @submit.prevent="submit()" class="card-body cardbody-color p-lg-5">
@@ -62,11 +62,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .btn-color{
   background-color: #0e1c36;
   color: #fff;
   
+}
+.btn-color-return{
+  background-color: #00369b;
+  color: #fff;
 }
 .profile-image-pic{
   height: 200px;
@@ -76,7 +80,6 @@ export default {
 .cardbody-color{
   background-color: #ebf2fa;
 }
-
 a{
   text-decoration: none;
 }

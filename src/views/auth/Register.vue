@@ -6,25 +6,25 @@
         <div class="text-center mb-5 text-dark">Comece a criar a melhor experiência possível</div>
         <div class="card my-5">
           <form @submit.prevent="submit" class="card-body cardbody-color p-lg-5" action="" method="">
+            <div class="text-center">
+              <p>Preencher formulários</p>
+            </div>
+
             <p v-if="showError" class="alert alert-danger" role="alert">{{ showError }}</p>
             
             <div class="mb-3">
-              <p class="form-label">Nome:</p>
               <input v-model="form.name" class="form-control" type="text" placeholder="Digete seu nome" required>
             </div>
 
             <div class="mb-3">
-              <p class="form-label">E-mail:</p>
               <input v-model="form.email" class="form-control" type="email" placeholder="Digete seu email" required>
             </div>
 
             <div class="mb-3">
-              <p class="form-label">Senha:</p>
               <input v-model="form.password" class="form-control" type="password" placeholder="Digite a senha" required>
             </div>
 
             <div class="form-label-wrapper">
-              <p class="form-label">Confirmar Senha:</p>
               <input v-model="form.password_confirmation" class="form-control" type="password" placeholder="Confirme a senha" required>
             </div>
 
@@ -73,6 +73,7 @@ export default {
 .btn-color{
   background-color: #0e1c36;
   color: #fff;
+  
 }
 .btn-color-return{
   background-color: #00369b;
@@ -86,7 +87,6 @@ export default {
 .cardbody-color{
   background-color: #ebf2fa;
 }
-
 a{
   text-decoration: none;
 }
